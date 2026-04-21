@@ -1,0 +1,26 @@
+{
+  "name": "my-dev-tools-mcp",
+  "version": "1.0.0",
+  "description": "Personal MCP server for daily development automation",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "my-dev-tools-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "inspect": " set DANGEROUSLY_OMIT_AUTH=true && npx @modelcontextprotocol/inspector npm run dev"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/inspector": "^0.21.2",
+    "@types/node": "^22.19.17",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
