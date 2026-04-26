@@ -1,4 +1,5 @@
 # my-dev-tools-mcp
+[![MCPize](https://mcpize.com/badge/@Sadman95/my-dev-tools)](https://mcpize.com/mcp/my-dev-tools)
 
 A personal MCP (Model Context Protocol) server for automating daily development tasks.  
 Works with **VS Code Copilot**, **Claude Desktop**, or any MCP-compatible client.
@@ -81,6 +82,16 @@ Edit `%APPDATA%\Claude\claude_desktop_config.json`:
   }
 }
 ```
+
+## Connect via MCPize
+
+Use this MCP server instantly with no local installation:
+
+```bash
+npx -y mcpize connect @Sadman95/my-dev-tools --client claude
+```
+
+Or connect at: **https://mcpize.com/mcp/my-dev-tools**
 
 ## Usage Examples
 
