@@ -9,12 +9,15 @@
   },
   "scripts": {
     "dev": "tsx src/index.ts",
+    "dev:http": "cross-env PORT=3000 tsx src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
-    "inspect": " set DANGEROUSLY_OMIT_AUTH=true && npx @modelcontextprotocol/inspector npm run dev"
+    "start:http": "cross-env PORT=3000 node dist/index.js",
+    "inspect": "cross-env DANGEROUSLY_OMIT_AUTH=true npx @modelcontextprotocol/inspector npm run dev"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1",
+    "cross-env": "^7.0.3",
     "zod": "^3.24.4"
   },
   "devDependencies": {
